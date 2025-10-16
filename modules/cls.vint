@@ -1,4 +1,7 @@
 package cls {
+    let init = func() {
+        println("Init from cls")
+    }
     const shell = import("shell");
     let clear = func() {
         shell.run("clear");
