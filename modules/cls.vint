@@ -1,9 +1,10 @@
 package cls {
     let init = func() {
-        println("Init from cls")
+        // println("Init from cls") //This will run when the package is imported
+        cls.clear();
     }
     const shell = import("shell");
     let clear = func() {
-        shell.run("clear");
+        return shell.run("clear");
     }
 }
