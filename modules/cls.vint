@@ -5,6 +5,7 @@ package cls {
     }
     const shell = import("shell");
     let clear = func() {
-        return shell.run("clear");
+        return println("\x1B[2J\x1B[H") // ANSI escape codes to clear terminal
+        // return shell.run("clear");
     }
 }
